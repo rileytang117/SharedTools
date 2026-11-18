@@ -10,10 +10,6 @@ function setCurveStyle(curveHandle, settings)
 %   MarkerFaceColor    marker 填充颜色，'none' 表示不填充
 %   NumMarkers         marker 的目标数量，取正整数
 %   MarkerPhase        起始位置相对一个间隔的偏移比例，范围为 [0, 1)，默认 0
-%
-% 目标间隔为 X 数据范围除以 NumMarkers，首个目标位置为 min(X) + MarkerPhase * 目标间隔。
-% 在各目标位置选择最近的已有数据点，重复选中的点只保留一次，因此实际数量可能少于 NumMarkers。
-% 未提供 NumMarkers 时保持原有 MarkerIndices；显示 marker 需要 Marker 类型不是 'none'。
 
 propertyNames = {'Color', 'LineStyle', 'LineWidth', 'Marker', 'MarkerSize', 'MarkerEdgeColor', 'MarkerFaceColor'};
 

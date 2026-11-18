@@ -20,9 +20,6 @@ function plotCurves2d(curves, settings)
 %   TitleFont             图标题的字体设置，对应 setFontStyle
 %   LegendStyle           图例布局和外观设置，对应 setLegendStyle
 %   LegendFont            图例字体设置，对应 setFontStyle
-%
-% 未提供或为空的设置分组使用空结构体，由各小函数决定默认行为。
-% 不进行额外设置时，第二个输入传入 struct()。
 
 if getFieldValue(settings, 'UseDefaultSettings', false)
     settings = applyDefaultSettings(settings, getDefaultPlotSettings());

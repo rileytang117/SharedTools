@@ -17,12 +17,6 @@ function setAxesTicks(settings)
 %   YExponent             纵轴手动指数，优先于 YScientificNotation
 %   XTickFormat           横轴数字格式，例如 '%.2f'，默认自动确定
 %   YTickFormat           纵轴数字格式，例如 '%.2f'，默认自动确定
-%
-% 手动指定范围时不增加留白；手动指定主刻度时不使用刻度数量设置。
-% 留白比例相对于自动范围的跨度，两端分别增加对应比例。
-% 'auto' 在刻度非零最大绝对值小于 0.1 或不小于 1000 时使用科学计数法。
-% 'on' 按数值量级选择指数；指数为 0 时不显示倍率。
-% 刻度位置使用原始数据单位，数字格式作用于除以科学计数法倍率后的刻度值。
 
 axesHandle = gca;
 axisNames = {'X', 'Y'};

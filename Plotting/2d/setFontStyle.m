@@ -7,10 +7,6 @@ function setFontStyle(targetHandle, settings)
 %   FontWeight     字体粗细：'normal' 或 'bold'
 %   FontAngle      字体倾斜：'normal' 或 'italic'
 %   Interpreter    文字解释器：'tex'、'latex' 或 'none'
-%
-% 坐标轴使用 TickLabelInterpreter，其余对象使用 Interpreter。
-% 使用 'latex' 时，FontName、FontWeight 和 FontAngle 不影响实际显示。
-% 设置坐标轴字号可能联动尚未独立设置字号的标签、标题和图例。
 
 propertyNames = {'FontName', 'FontSize', 'FontWeight', 'FontAngle'};
 

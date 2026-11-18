@@ -12,8 +12,6 @@ function setLegendStyle(curveHandles, legendLabels, settings)
 %   LineWidth          图例边框线宽，单位为 point（pt）
 %   IconColumnWidth    图例中曲线示意图标所占区域的宽度，单位为 point（pt）
 %   Title              图例标题文字
-%
-% 字体和解释器在函数外通过 setFontStyle 设置。
 
 axesHandle = gca;
 legendHandle = legend(axesHandle, curveHandles, legendLabels);
